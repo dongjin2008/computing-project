@@ -5,7 +5,7 @@ class num_convert:
         self.ui = ""
     
     def get_ui(self):
-        self.ui = input("Enter the {} number: ".format(self.input))
+        self.ui = input(f"Enter the {self.input} number: ")
 
     def to_bin(self):
         if self.input == "dec":
@@ -34,17 +34,16 @@ class num_convert:
             return int(self.ui, 2)
 
     def to_oct(self):
-        if self.input == "dec":
+        if self.input == "bin":
+            return oct(int(self.ui, 2))[2:]
+        elif self.input == "dec":
             return oct(self.ui)[2:]
-
-        elif self.input == "oct":
-            return "It's already octal"
 
         elif self.input == "hex":
             return oct(int(self.ui, 16))[2:]
 
-        elif self.input == "bin":
-            return oct(int(self.ui, 2))[2:]
+        elif self.input == "oct":
+            return "It's already octal"
 
     def to_hex(self):
         if self.input == "dec":

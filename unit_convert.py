@@ -66,31 +66,31 @@ class unit_convert:
     def main(self):
         self.get_ui()
         if self.output == "cm":
-            return str(self.to_cm()) + "cm"
-        
+            return f"{str(self.to_cm())}cm"
+
         elif self.output == "m":
-            return str(self.to_m()) + "m"
+            return f"{str(self.to_m())}m"
 
         elif self.output == "km":
-            return str(self.to_km()) + "km"
+            return f"{str(self.to_km())}km"
 
         elif self.output == "g":
-            return str(self.to_g()) + "g"
+            return f"{str(self.to_g())}g"
 
         elif self.output == "kg":
-            return str(self.to_kg()) + "kg"
+            return f"{str(self.to_kg())}kg"
 
         elif self.output == "t":
-            return str(self.to_t()) + "t"
+            return f"{str(self.to_t())}t"
 
         elif self.output == "ml":
-            return str(self.to_ml()) + "ml"
+            return f"{str(self.to_ml())}ml"
 
         elif self.output == "l":
-            return str(self.to_l()) + "l"
+            return f"{str(self.to_l())}l"
 
         elif self.output == "kl":
-            return str(self.to_kl()) + "kl"
+            return f"{str(self.to_kl())}kl"
 
 def UnitConvert(Input, Output):
     return unit_convert(input=Input, output=Output).main()
